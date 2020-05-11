@@ -28,6 +28,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
+    width: 100%;
     background: rgba(
       $color: lighten($color: $primary-color, $amount: 2),
       $alpha: 0.5
