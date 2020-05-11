@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  text-align: center;
 }
 
 h1,
@@ -27,6 +28,7 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
+
     padding: 0.2rem 1rem;
     width: 100%;
     background: rgba(

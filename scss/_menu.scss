@@ -74,5 +74,48 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
+
+    .portrait {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+      background-image: url(../img/protrait.jpg);
+    }
+  }
+
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
